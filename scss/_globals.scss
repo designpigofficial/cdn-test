@@ -1,0 +1,55 @@
+
+// THEMEING
+:root {
+    --blue-color: blue;
+    --red-color: red;
+    --yellow-color: yellow;
+    --light-color: #e0e0e0;
+    --dark-color: #303030;
+}
+
+$background-color: var(--light-color);
+$text-color: var(--dark-color);
+
+// BASE STYLES
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+// UTILITIES
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
